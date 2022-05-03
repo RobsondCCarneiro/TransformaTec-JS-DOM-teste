@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1 id="paragrafo">Clique aqui para testar o externo!</h1>
+
+    <h1 onclick="alert('clicou (interno)')">Clique para testar o inline</h1>
+</body>
+<script>
+     //Adicionando event listener ao elemento HTML
+    var paragrafo = document.getElementById("paragrafo").addEventListener("click", 
+    function(){
+        alert("Olá mundo (externo)")
+    })
+</script>
+</html>
